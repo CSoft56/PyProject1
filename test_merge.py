@@ -8,8 +8,6 @@ import shutil
 
 PAGEFILE = """title: {title}
 url:
-save_as: {htmlfile}
-Template: {template}
 
 {{% notebook notebooks/{notebook_file} cells[{cells}] %}}
 """
@@ -107,5 +105,3 @@ def copy_notebooks():
                                     template=template,
                                     cells=cells))
 
-if __name__ == '__main__':
-    copy_notebooks()
