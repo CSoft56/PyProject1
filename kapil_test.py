@@ -56,3 +56,40 @@ def prime_no(list_1):
     return(list3)
 
 print(prime_no(list_1))
+
+print("------------------------------------------------------")
+'''
+Functions : Block of statement that can be executed by using the function name and it helps to reduce the 
+duplicacy of the code.
+1. Positional or required arguments
+2. Default arguments
+3. Unlimited arguments
+4. Keyword arguments
+
+'''
+
+
+def multi(a, b):
+    c = a * b
+    return c
+print(multi(10,2))
+
+def student(a=10, b= 15):
+    c = a + b
+    print(c)
+
+student()
+
+def nums(*args):
+    print(*args)
+
+nums("Kapil", "is", "a", "Data Engineer", 100, 200, 150, 350, 400)
+
+
+def person(**data):
+    print(type(data))
+    for k,v in data.items():
+        print("My {} is {} ".format(k,v))
+
+
+person(name="kapil",age="25",position="Data Engineer")
